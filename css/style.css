@@ -48,6 +48,7 @@
 .container {
     background-color: var(--bg-c);
     width: 90%;
+    min-width: 320px;
     max-width: 1200px;
     margin: 3.3333rem;
     border-radius: 5px;
