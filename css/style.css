@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ :root {
+    --ff-ss: 'Lexend Deca', sans-serif;
+    --ff-c: 'Big Shoulders Display', cursive;
+
+    --fs: .9375rem;
+    --fw: 700;
+
+    --tt: uppercase;
+
+    --bg-c: hsl(0, 0%, 95%);
+    --heading-fc: hsl(0, 0%, 95%);
+    --bg-fc: hsl(0, 0%, 95%);
+    --btn-color: hsl(0, 0%, 95%);
+    --parg-color: hsla(0, 0%, 100%, 0.75);
+    --first-section-bg-color: hsl(31, 77%, 52%);
+    --second-section-bg-color: hsl(184, 100%, 22%);
+    --third-section-bg-color:hsl(179, 100%, 13%);
+
+    --first-btn-fc: hsl(31, 77%, 52%);
+    --second-btn-fc: hsl(184, 100%, 22%);
+    --third-btn-fc: hsl(179, 100%, 13%);
+
+    --section-padding: 2.6666rem;
+    --br: 2rem;
+    --header-parg-mrgn: 2rem;
+ }
+
+ img {
+    max-width: 100%;
+    display: block;
+ }
+
+ body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-ss);
+    background-color: hsl(0, 0%, 93%);
+}
+
+.container {
+    background-color: var(--bg-c);
+    width: 90%;
+    max-width: 1200px;
+    margin: 3.3333rem;
+    border-radius: 5px;
+    box-shadow: 0 .6666rem .6666rem .6666rem hsl(0, 0%, 83%);
+}
+
+.card {
+    width: 80%;
+    margin: 4.6666rem auto;
+    border-radius: .4666rem;
+    overflow: hidden;
+}
+
+section {
+    padding: var(--section-padding);
+}
+
+.sedan-section {
+    background-color: var(--first-section-bg-color);
+}
+
+.suv-section {
+    background-color: var(--second-section-bg-color)
+}
+
+.luxury-section {
+    background-color: var(--third-section-bg-color);
+}
+
+h1 {
+    font-family: var(--ff-c);
+    text-transform: var(--tt);
+    color: var(--heading-fc);
+    margin-top: var(--header-parg-mrgn);
+    font-size: 2.2rem;
+    letter-spacing: .05rem;
+}
+
+section p {
+    color: var(--parg-color);
+    line-height: 1.6;
+    margin-top: var(--header-parg-mrgn);
+}
+
+button {
+    display: inline-block;
+    font-family: var(--ff-ss);
+    border-radius: var(--br);
+    background-color: var(--btn-color);
+    border: none;
+    padding: .8rem 1.6rem;
+    margin-top: 2rem;
+    font-weight: 700;
+    letter-spacing: .025rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(0, 0%, 77%);
+}
+
+.first-btn {
+    color: var(--first-btn-fc);
+}
+
+.second-btn {
+    color: var(--second-btn-fc);
+}
+
+.third-btn {
+    color: var(--third-btn-fc);
+}
+
+/* FOR TABLET AND DESKTOP */
+
+@media (min-width: 517px) {
+    .card {
+      display: flex;  
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    section {
+        padding: 3.2666rem;
+    }
+    button {
+        margin-top: 4.6666rem;
+        padding: 1rem 2rem;
+    }
+}
